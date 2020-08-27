@@ -10,3 +10,90 @@ $font-weight-light: 300
 $font-weight-regular: 600
 $font-weight-bold: 700
 $font-base-size: 20px
+
+/*
+ * BASE LAYOUT
+ */
+*
+  box-sizing: border-box
+  font-family: $font-stack
+body
+  margin: 0
+  font-size: $font-base-size
+  text-align: center
+  padding: 80px 25px 0 25px
+  min-height: 100vh
+  max-width: 100%
+#wrapper
+  width: 100%
+  min-height: 100%
+h1
+  font-size: 1em
+  font-weight: $font-weight-light
+  color: $col-neutral-light
+  margin-bottom: 15px
+p
+  font-size: 0.6em
+.emphasis
+  font-weight: $font-weight-bold
+  color: $col-neutral-dark
+
+// HEADER
+.logo
+  height: 16px
+  margin-bottom: 20px
+
+// FORM
+form
+  margin-top: 15px
+  padding: 20px
+input, button
+  display: block
+  width: 100%
+  margin-bottom: 10px
+  border-radius: 100px
+  padding: 12px 30px
+  font-size: 0.6em
+input
+  border: 1px solid $col-primary-pale
+input::placeholder
+  color: $col-primary-pale
+button
+  border: none
+  background: $col-primary
+  color: white
+  font-weight: $font-weight-regular
+  box-shadow: 0px 5px 10px $col-primary-pale
+
+// IMAGE
+.img-hero
+  margin-top: 40px
+  max-width: 100%
+
+// FOOTER
+footer
+  position: absolute
+  width: calc(100% - 50px)
+  margin-top: 100px
+  margin-bottom: 50px
+footer ul
+  list-style-type: none
+  padding: 0 0 10px 0
+footer ul li
+  display: inline-block
+  margin: 0 5px
+footer ul li a
+  color: $col-primary
+  font-size: 0.7em
+  border: 1px solid #e5e5e5
+  border-radius: 50px
+  padding: 6px 8px
+footer ul li:first-of-type a
+  padding: 6px 10px
+footer ul li a:hover
+  background: $col-primary
+  color: white
+  border-color: $col-primary
+.fineprint
+  font-size: 0.5em
+  color: $col-neutral-light
