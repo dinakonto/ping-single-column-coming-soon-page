@@ -4,21 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/css/styles.css">
 
   <title>Frontend Mentor | Ping coming soon page</title>
 
 </head>
 <body>
+  <div id="wrapper">
+    <header>
+      <img src="./assets/logo.svg" alt="Ping logo" class="logo">
+    </header>
 
-  We are launching soon!
+    <h1>We are launching <strong>soon!</strong></h1>
+    <p>Subscribe and get notified</p>
 
-  Subscribe and get notified
+    <form action="" id="subscribe-form">
+      <input type="email" name="email" placeholder="Your email address..." aria-label="Email Address">
+      <button type="submit" aria-label="Submit">Notify Me</button>
+    </form>
 
-  Notify Me
+    <img src="./assets/illustration-dashboard.png" alt="Dashboard illustration" class="img-hero">
 
-  &copy; Copyright Ping. All rights reserved.
+    <footer>
+      <div class="social">
+        <ul>
+          <li>F</li>
+          <li>T</li>
+          <li>I</li>
+        </ul>
+        <p class="fineprint">&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+    </footer>
 
+  </div>
 </body>
 </html>
