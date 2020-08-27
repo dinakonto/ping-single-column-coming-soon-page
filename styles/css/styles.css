@@ -59,10 +59,16 @@ input, button {
 
 input {
   border: 1px solid #c2d3ff;
+  color: #151f29;
 }
 
 input::placeholder {
   color: #c2d3ff;
+}
+
+input:hover, input:focus {
+  border-color: #969696;
+  outline: none;
 }
 
 button {
@@ -71,6 +77,35 @@ button {
   color: white;
   font-weight: 600;
   box-shadow: 0px 5px 10px #c2d3ff;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+button:active {
+  opacity: 1;
+}
+
+form .error {
+  color: #ff5263;
+  display: inline-block;
+  font-style: italic;
+  font-size: 0.5em;
+  margin-bottom: 15px;
+}
+
+form .input-error {
+  border: 1px solid #ff5263;
+  color: #151f29;
+  font-style: normal;
+  margin-bottom: 0px;
 }
 
 .img-hero {
@@ -151,6 +186,19 @@ footer ul li a:hover {
 
   button {
     margin-left: 10px;
+  }
+
+  form .error {
+    grid-row: 2/span 1;
+    display: block;
+    font-size: 0.7em;
+    margin-bottom: 0;
+    margin-left: 30px;
+    text-align: left;
+  }
+
+  form .input-error {
+    margin-bottom: 10px;
   }
 
   footer {
